@@ -481,6 +481,7 @@
                 <a href="#" class="nav-link active" onclick="showPage('home')">Home</a>
                 <a href="#" class="nav-link" onclick="showPage('categories')">Categories</a>
                 <a href="#" class="nav-link" onclick="showPage('about')">About</a>
+                <a href="#" class="nav-link" onclick="showPage('other')">Other</a>
             </nav>
             <button class="menu-toggle" onclick="toggleMobileMenu()">
                 <i class="fas fa-bars"></i>
@@ -490,6 +491,7 @@
             <a href="#" onclick="showPage('home'); toggleMobileMenu()">Home</a>
             <a href="#" onclick="showPage('categories'); toggleMobileMenu()">Categories</a>
             <a href="#" onclick="showPage('about'); toggleMobileMenu()">About</a>
+            <a href="#" onclick="showPage('other'); toggleMobileMenu()">Other</a>
         </div>
     </header>
 
@@ -696,6 +698,34 @@
             </div>
         </div>
 
+        <!-- Other Page -->
+        <div id="other" class="page">
+            <div class="about-container">
+                <h1 style="font-size: 32px; margin-bottom: 30px; color: #222;">Other Content</h1>
+                
+                <div class="about-section">
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <img src="https://picsum.photos/seed/other/600/400.jpg" alt="Other Content" style="width: 100%; max-width: 600px; height: 400px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    </div>
+                    <p>Welcome to our Other section, where we showcase diverse content that doesn't fit into our main news categories. This space is dedicated to unique stories, interesting discoveries, and content that spans across multiple topics.</p>
+                    <p>Here you'll find a curated collection of articles, features, and stories that offer a different perspective on current events and trending topics. Our team carefully selects content that provides value and insight beyond traditional news coverage.</p>
+                    <p>Whether it's fascinating human interest stories, innovative ideas, or thought-provoking content, this section aims to broaden your horizons and introduce you to topics you might not encounter elsewhere.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3><i class="fas fa-lightbulb" style="color: #ff9800;"></i> Unique Stories</h3>
+                        <p>Discover extraordinary stories that don't fit conventional news categories but deserve to be told.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3><i class="fas fa-compass" style="color: #4caf50;"></i> Diverse Perspectives</h3>
+                        <p>Explore content from different angles and viewpoints that challenge conventional thinking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Article Detail Page -->
         <div id="article" class="page">
             <a href="#" class="back-button" onclick="showPage('home')">
@@ -730,6 +760,10 @@
         <a href="#" onclick="showPage('about')">
             <i class="fas fa-info-circle"></i>
             <span>About</span>
+        </a>
+        <a href="#" onclick="showPage('other')">
+            <i class="fas fa-ellipsis-h"></i>
+            <span>Other</span>
         </a>
     </nav>
 
